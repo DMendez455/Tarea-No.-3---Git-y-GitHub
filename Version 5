@@ -1,0 +1,22 @@
+def sumar(a, b):
+    return a + b
+
+def restar(a, b):
+    return a - b
+
+print("1. Sumar")
+print("2. Restar")
+op = input("Seleccione una opción: ")
+
+try:
+    x = int(input("Ingrese primer número: "))
+    y = int(input("Ingrese segundo número: "))
+    
+    if op == "1":
+        print("Resultado:", sumar(x, y))
+    elif op == "2":
+        print("Resultado:", restar(x, y))
+    else:
+        print("Opción no válida.")
+except ValueError:
+    print("Error: ingrese números válidos.")
