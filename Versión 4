@@ -1,0 +1,9 @@
+def sumar(a, b):
+    return a + b
+
+try:
+    x = int(input("Ingrese primer número: "))
+    y = int(input("Ingrese segundo número: "))
+    print("Resultado:", sumar(x, y))
+except ValueError:
+    print("Error: ingrese números válidos.")
